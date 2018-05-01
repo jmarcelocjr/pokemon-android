@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Pokemon</string>
+    <string name="navigation_list">List</string>
+    <string name="navigation_new_pokemon">Register a new Pokemon</string>
+    <string name="navigation_about">About</string>
+    <string name="title_activity_main">Pokemon</string>
+</resources>
