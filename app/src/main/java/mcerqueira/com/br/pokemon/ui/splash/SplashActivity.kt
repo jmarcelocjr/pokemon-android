@@ -7,7 +7,7 @@ import android.support.v7.app.AppCompatActivity
 import android.view.animation.AnimationUtils
 import kotlinx.android.synthetic.main.activity_splash.*
 import mcerqueira.com.br.pokemon.R
-import mcerqueira.com.br.pokemon.ui.main.MainActivity
+import mcerqueira.com.br.pokemon.ui.login.LoginActivity
 
 class SplashActivity : AppCompatActivity() {
 
@@ -18,7 +18,7 @@ class SplashActivity : AppCompatActivity() {
         loadAnimation()
 
         Handler().postDelayed({
-            startActivity(Intent(this, MainActivity::class.java))
+            startActivity(Intent(this, LoginActivity::class.java))
             this.finish()
         }, 3000)
     }

@@ -23,6 +23,12 @@
         <activity
             android:name=".ui.main.MainActivity"
             android:label="@string/title_activity_main" />
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:label="@string/login" />
+        <activity
+            android:name=".ui.registerUser.RegisterUserActivity"
+            android:label="@string/register" />
     </application>
 
 </manifest>
