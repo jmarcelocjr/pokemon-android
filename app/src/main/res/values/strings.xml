@@ -10,7 +10,14 @@
     <string name="register">Register</string>
     <string name="login_failed">Login/Password invalid. Try again</string>
     <string name="user_registered_successfully">User registered successfully!</string>
+    <string name="pokemon_registered_successfully">Pokemon registered successfully!</string>
     <string name="save">Save</string>
     <string name="et_name">Name</string>
     <string name="login">Login</string>
+    <string name="message_error">Something went wrong, try again later.</string>
+    <string name="title_error">Error!</string>
+    <string name="loading">Loading...</string>
+    <string name="pokemon_name">Name</string>
+    <string name="pokemon_type">Type</string>
+    <string name="pokemon_pokeball">Pokeball Captured</string>
 </resources>

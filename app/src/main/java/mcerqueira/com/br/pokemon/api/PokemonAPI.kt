@@ -18,6 +18,6 @@ interface PokemonAPI {
     @GET("/pokemon")
     fun findAll(): Call<List<Pokemon>>
 
-    @GET("/pokemon/pokeball/{pokeball}")
-    fun findByPokeball(@Path("pokeball") pokeball: String): Call<List<Pokemon>>
+    @GET("/pokemon/type/{type}")
+    fun findByType(@Path("type") type: String): Call<List<Pokemon>>
 }
