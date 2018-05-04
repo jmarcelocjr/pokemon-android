@@ -2,10 +2,7 @@ package mcerqueira.com.br.pokemon.api
 
 import mcerqueira.com.br.pokemon.model.Pokemon
 import retrofit2.Call
-import retrofit2.http.Body
-import retrofit2.http.GET
-import retrofit2.http.POST
-import retrofit2.http.Path
+import retrofit2.http.*
 
 interface PokemonAPI {
 
@@ -20,4 +17,8 @@ interface PokemonAPI {
 
     @GET("/pokemon/type/{type}")
     fun findByType(@Path("type") type: String): Call<List<Pokemon>>
+
+    @DELETE("/pokemon/{id}")
+    fun delete(@Path("id") id: String) : Call<Void>
+
 }

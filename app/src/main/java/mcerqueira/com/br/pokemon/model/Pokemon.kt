@@ -5,4 +5,6 @@ data class Pokemon(
     var name: String,
     var type: Type,
     var pokeball: Pokeball
-)
+){
+    constructor() : this(null, "", Type(), Pokeball()) // this constructor is an explicit
+}

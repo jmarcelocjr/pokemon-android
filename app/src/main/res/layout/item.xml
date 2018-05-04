@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:layout_marginHorizontal="10dp">
+    android:layout_marginHorizontal="10dp"
+    android:padding="15dp">
 
     <TextView
         android:layout_width="match_parent"
@@ -16,8 +17,8 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/tvLevel"
-        tools:text="Level"/>
+        android:id="@+id/tvType"
+        tools:text="Type"/>
 
     <TextView
         android:layout_width="match_parent"

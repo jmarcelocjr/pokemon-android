@@ -20,4 +20,6 @@
     <string name="pokemon_name">Name</string>
     <string name="pokemon_type">Type</string>
     <string name="pokemon_pokeball">Pokeball Captured</string>
+    <string name="pokemon_updated_successfully">Pokemon updated successfully</string>
+    <string name="pokeball_captured">Pokeball Captured</string>
 </resources>

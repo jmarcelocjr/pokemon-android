@@ -63,5 +63,8 @@
         app:backgroundTint="@android:color/darker_gray"
         app:layout_anchorGravity="bottom|right|end" />
 
+    <include layout="@layout/loading" />
+    <include layout="@layout/error" />
+
 </android.support.design.widget.CoordinatorLayout>
 
