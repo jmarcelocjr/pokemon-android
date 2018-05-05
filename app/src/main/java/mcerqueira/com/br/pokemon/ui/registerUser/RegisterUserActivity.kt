@@ -10,6 +10,9 @@ import mcerqueira.com.br.pokemon.api.RetrofitClient
 import mcerqueira.com.br.pokemon.api.UserAPI
 import mcerqueira.com.br.pokemon.model.User
 import mcerqueira.com.br.pokemon.ui.main.MainActivity
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
 
 class RegisterUserActivity : AppCompatActivity() {
 
@@ -31,14 +34,29 @@ class RegisterUserActivity : AppCompatActivity() {
             input_password.editText?.text.toString()
         )
 
-        api.save(user)
+        api.save(user).enqueue(object : Callback<Void> {
+            override fun onFailure(call: Call<Void>?, t: Throwable?) {
+                Toast.makeText(
+                        application.baseContext,
+                        R.string.message_error,
+                        Toast.LENGTH_SHORT
+                ).show()
 
-        Toast.makeText(
-                application.baseContext,
-                R.string.user_registered_successfully,
-                Toast.LENGTH_SHORT
-        ).show()
+            }
 
+            override fun onResponse(call: Call<Void>?, response: Response<Void>?) {
+                Toast.makeText(
+                        application.baseContext,
+                        R.string.user_registered_successfully,
+                        Toast.LENGTH_SHORT
+                ).show()
+
+                goToMainActivity()
+            }
+        })
+    }
+
+    private fun goToMainActivity() {
         startActivity(Intent(this, MainActivity::class.java))
         this.finish()
     }
