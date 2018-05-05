@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment
 import android.support.v7.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import mcerqueira.com.br.pokemon.R
+import mcerqueira.com.br.pokemon.ui.about.AboutFragment
 import mcerqueira.com.br.pokemon.ui.list.ListFragment
 import mcerqueira.com.br.pokemon.ui.registerPokemon.RegisterPokemonFragment
 
@@ -19,6 +20,10 @@ class MainActivity : AppCompatActivity() {
             }
             R.id.navigation_new -> {
                 changeFragment(RegisterPokemonFragment())
+                return@OnNavigationItemSelectedListener true
+            }
+            R.id.navigation_about -> {
+                changeFragment(AboutFragment())
                 return@OnNavigationItemSelectedListener true
             }
         }

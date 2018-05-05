@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import mcerqueira.com.br.pokemon.R
 
-class SobreFragment : Fragment() {
+class AboutFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
